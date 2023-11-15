@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="lanre" type="text"><br><br>
+    <input id="lanre1" type="text"><br><br>
+    <select id="operators">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="/">/</option>
+        <option value="*">*</option>
+    </select>
+    <button onclick="calc()">=</button><br><br>
+    <input id="result" type="text">
+</body>
+</html>
+<script>
+    function calc(){
+    let lanre = parseInt(document.getElementById("lanre").value);
+    let lanre1 = parseInt(document.getElementById("lanre1").value);
+    let operators = (document.getElementById("operators").value);
+
+    if(operators === "+"){
+        document.getElementById("result").value = lanre + lanre1
+    }
+    if(operators === "-"){
+        document.getElementById("result").value = lanre - lanre1
+    }
+    if(operators === "/"){
+        document.getElementById("result").value = lanre / lanre1
+    }
+    if(operators === "*"){
+        document.getElementById("result").value = lanre * lanre1
+    }
+}
+
+console.log(result);
+</script>
